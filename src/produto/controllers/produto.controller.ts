@@ -9,6 +9,7 @@ import {
   ParseIntPipe,
   Post,
   Put,
+  UseGuards,
 } from '@nestjs/common';
 import { DeleteResult } from 'typeorm';
 import { ProdutoService } from '../services/produto.service';
@@ -36,18 +37,21 @@ export class ProdutoController {
     return this.produtoService.findByTitulo(titulo);
   }
 
+  @UseGuards(JwtAuthGuard)
   @Post()
   @HttpCode(HttpStatus.CREATED)
   create(@Body() produto: Produto): Promise<Produto> {
     return this.produtoService.create(produto);
   }
 
+  @UseGuards(JwtAuthGuard)
   @Put()
   @HttpCode(HttpStatus.OK)
   update(@Body() produto: Produto): Promise<Produto> {
     return this.produtoService.update(produto);
   }
 
+  @UseGuards(JwtAuthGuard)
   @Delete('/:id')
   @HttpCode(HttpStatus.NO_CONTENT)
   delete(@Param('id', ParseIntPipe) id: number): Promise<DeleteResult> {
