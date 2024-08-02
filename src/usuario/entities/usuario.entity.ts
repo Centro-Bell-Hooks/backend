@@ -19,7 +19,7 @@ export class Usuario {
 
   @Transform(({ value }: TransformFnParams) => value?.trim())
   @IsNotEmpty()
-  @Column({ length: 20, nullable: false })
+  @Column({ length: 200, nullable: false })
   senha: string;
 
   @Column()
