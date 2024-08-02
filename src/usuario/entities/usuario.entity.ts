@@ -3,7 +3,7 @@ import { IsNotEmpty } from 'class-validator';
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity({ name: 'tb_usuarios' })
-export class Produto {
+export class Usuario {
   @PrimaryGeneratedColumn()
   id: number;
 
@@ -19,7 +19,7 @@ export class Produto {
 
   @Transform(({ value }: TransformFnParams) => value?.trim())
   @IsNotEmpty()
-  @Column({ length: 20, nullable: false })
+  @Column({ length: 200, nullable: false })
   senha: string;
 
   @Column()
