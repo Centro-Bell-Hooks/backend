@@ -14,6 +14,7 @@ import {
 import { Categoria } from '../entities/categoria.entity';
 import { CategoriaService } from '../services/categoria.service';
 import { DeleteResult } from 'typeorm';
+import { JwtAuthGuard } from '../../auth/guard/jwt-auth.guard';
 
 @Controller('/categorias')
 export class CategoriaController {

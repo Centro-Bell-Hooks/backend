@@ -14,6 +14,7 @@ import {
 import { DeleteResult } from 'typeorm';
 import { ProdutoService } from '../services/produto.service';
 import { Produto } from '../entities/produto.entity';
+import { JwtAuthGuard } from '../../auth/guard/jwt-auth.guard';
 
 @Controller('/produtos')
 export class ProdutoController {
