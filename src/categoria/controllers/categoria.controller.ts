@@ -15,8 +15,10 @@ import { Categoria } from '../entities/categoria.entity';
 import { CategoriaService } from '../services/categoria.service';
 import { DeleteResult } from 'typeorm';
 import { JwtAuthGuard } from '../../auth/guard/jwt-auth.guard';
+import { ApiBearerAuth } from '@nestjs/swagger';
 
 @Controller('/categorias')
+@ApiBearerAuth()
 export class CategoriaController {
   constructor(readonly categoriaService: CategoriaService) {}
 
