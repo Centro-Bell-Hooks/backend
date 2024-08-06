@@ -37,10 +37,8 @@ export class Produto {
   @Column({ nullable: false })
   quantidade: number;
 
-  @IsNotEmpty()
   @UpdateDateColumn()
-  @Column({ nullable: false })
-  data: number;
+  data: Date;
 
   @Column({ nullable: false })
   status: boolean;
