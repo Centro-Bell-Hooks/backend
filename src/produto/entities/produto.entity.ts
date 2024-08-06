@@ -46,9 +46,7 @@ export class Produto {
   quantidade: number;
 
   @ApiProperty()
-  @IsNotEmpty()
   @UpdateDateColumn()
-  @Column({ nullable: false })
   data: number;
 
   @ApiProperty()
