@@ -8,15 +8,14 @@ import { ApiBearerAuth, ApiProperty, ApiTags } from '@nestjs/swagger';
 @Entity({ name: 'tb_categorias' })
 @ApiBearerAuth()
 export class Categoria {
-
-  @ApiProperty()   
-  @PrimaryGeneratedColumn()   
+  @ApiProperty()
+  @PrimaryGeneratedColumn()
   id: number;
 
   @Transform(({ value }: TransformFnParams) => value?.trim())
   @IsNotEmpty()
   @Column({ length: 255, nullable: false })
-  @ApiProperty() 
+  @ApiProperty()
   tipo: string;
 
   @ApiProperty()

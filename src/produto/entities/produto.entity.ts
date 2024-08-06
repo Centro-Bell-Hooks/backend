@@ -13,7 +13,6 @@ import { Usuario } from '../../usuario/entities/usuario.entity';
 
 @Entity({ name: 'tb_produtos' })
 export class Produto {
-
   @ApiProperty()
   @PrimaryGeneratedColumn()
   id: number;
@@ -52,11 +51,11 @@ export class Produto {
   @Column({ nullable: false })
   data: number;
 
-  @ApiProperty() 
+  @ApiProperty()
   @Column({ nullable: false })
   status: boolean;
 
-  @ApiProperty({ type: () => Usuario }) 
+  @ApiProperty({ type: () => Usuario })
   @ManyToOne(() => Categoria, (categoria) => categoria.produto, {
     onDelete: 'CASCADE',
   })

@@ -17,7 +17,6 @@ import { Produto } from '../entities/produto.entity';
 import { JwtAuthGuard } from '../../auth/guard/jwt-auth.guard';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 
-
 @ApiTags('Produto')
 @UseGuards(JwtAuthGuard)
 @Controller('/produtos')

@@ -5,30 +5,29 @@ import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity({ name: 'tb_usuarios' })
 export class Usuario {
-
   @PrimaryGeneratedColumn()
-  @ApiProperty() 
+  @ApiProperty()
   id: number;
 
   @Transform(({ value }: TransformFnParams) => value?.trim())
   @IsNotEmpty()
   @Column({ length: 50, nullable: false })
-  @ApiProperty() 
+  @ApiProperty()
   nome: string;
 
   @Transform(({ value }: TransformFnParams) => value?.trim())
   @IsNotEmpty()
   @Column({ length: 30, nullable: false })
-  @ApiProperty({example: "email@email.com.br"}) 
+  @ApiProperty({ example: 'email@email.com.br' })
   usuario: string;
 
   @Transform(({ value }: TransformFnParams) => value?.trim())
   @IsNotEmpty()
   @Column({ length: 200, nullable: false })
-  @ApiProperty() 
+  @ApiProperty()
   senha: string;
 
   @Column()
-  @ApiProperty() 
+  @ApiProperty()
   foto: string;
 }
