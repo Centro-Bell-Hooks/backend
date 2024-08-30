@@ -53,9 +53,15 @@ export class Produto {
   @Column({ nullable: false })
   status: boolean;
 
-  @ApiProperty({ type: () => Usuario })
+  @ApiProperty({ type: () => Categoria })
   @ManyToOne(() => Categoria, (categoria) => categoria.produto, {
     onDelete: 'CASCADE',
   })
   categoria: Categoria;
+
+  @ManyToOne(() => Usuario, (usuario) => usuario.produto, {
+    onDelete: "CASCADE"
+  })
+  @ApiProperty({ type: () => Usuario }) 
+    usuario: Usuario;
 }
