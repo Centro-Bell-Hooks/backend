@@ -5,7 +5,7 @@ import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 import { Produto } from '../../produto/entities/produto.entity';
 
 // colocar depois tipo de usuário
-// empresa 
+// empresa
 // aluno
 @Entity({ name: 'tb_usuarios' })
 export class Usuario {
@@ -31,9 +31,13 @@ export class Usuario {
   @ApiProperty()
   senha: string;
 
-  @Column()
+  @Column({nullable: true})
   @ApiProperty()
   foto: string;
+
+  @Column()
+  @ApiProperty()
+  tipo: string;
 
   @OneToMany(() => Produto, (produto) => produto.usuario)
   @ApiProperty()
