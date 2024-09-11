@@ -31,15 +31,15 @@ export class Usuario {
   @ApiProperty()
   senha: string;
 
-  @Column({nullable: true})
+  @Column({ nullable: true })
   @ApiProperty()
   foto: string;
 
-  @Column()
+  @Column({ length: 30, nullable: false })
   @ApiProperty()
   tipo: string;
 
   @OneToMany(() => Produto, (produto) => produto.usuario)
   @ApiProperty()
-  produto: Produto[]
+  produto: Produto[];
 }
