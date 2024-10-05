@@ -1,73 +1,89 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+# Centro Bell Hooks 
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+  ![Logo](https://ik.imagekit.io/lidskey/PI/logobellhooksoficial_resized_small_hd.png?updatedAt=1728139094804)
 
-## Description
+Nosso Projeto é um site e-commerce de soluções baseadas na ODS5 - Igualdade de Gênero da ONU. Ofereceremos cursos profissionalizantes tanto na área de TI quanto outros segmentos. Nossa missão é ajudar mulheres e meninas a alcançarem o lugar que desejam e merecem. Faremos um gancho entre mulheres e oportunidades de trabalho, cursos de qualidade e networking seguro. 
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Stacks Utilizadas 
+### Backend
+- **Linguagens**: 
+  ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black)
+  ![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?logo=typescript&logoColor=white)
+  
+- **Framework**: 
+  ![NestJS](https://img.shields.io/badge/-NestJS-E0234E?logo=nestjs&logoColor=white)
+  
+- **Banco de Dados**: 
+  ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?logo=mysql&logoColor=white)
+  
+- **Autenticação e Segurança**: 
+  ![Passport](https://img.shields.io/badge/-Passport-34E27A?logo=passport&logoColor=white)
+  ![JWT](https://img.shields.io/badge/-JWT-000000?logo=json-web-tokens&logoColor=white)
+  ![Bcrypt](https://img.shields.io/badge/-Bcrypt-343a40?logo=auth0&logoColor=white)
 
-## Installation
+- **Testes**: 
+  ![Jest](https://img.shields.io/badge/-Jest-C21325?logo=jest&logoColor=white)
+  ![Insomnia](https://img.shields.io/badge/-Insomnia-5849BE?logo=insomnia&logoColor=white)
+
+- **Documentação**: 
+  ![Swagger](https://img.shields.io/badge/-Swagger-85EA2D?logo=swagger&logoColor=black)
+
+- **Deploy**: 
+  ![Render](https://img.shields.io/badge/-Render-46E3B7?logo=render&logoColor=white)
+
+## Funcionalidades
+
+- Login autênticado de usuário
+- Login autênticado do Admin
+- Tela Home 
+- Tela apresentando todos os serviços/cursos
+- Cadastro de novos serviços/cursos - Admin
+- Edição de novos serviços/cursos - Admin
+- Remoção de novos serviços/cursos - Admin
+- Perfil do candidato - melhoria futura
+- Tela 'Meus cursos' do candidato - melhoria futura
+
+
+## Rodando localmente
+
+Clone o projeto
 
 ```bash
-$ npm install
+  git clone https://github.com/Centro-Bell-Hooks/backend
 ```
 
-## Running the app
+Entre no diretório do projeto
 
 ```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+  cd backend
 ```
 
-## Test
+Instale as dependências
 
 ```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+  npm install
 ```
 
-## Support
+Inicie o servidor
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+```bash
+  npm run start
+```
 
-## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+## Autores
 
-## License
+- [Arthur Lopes](https://github.com/arthurlopes7)
+- [Danillo Oliveira](https://github.com/DanNilloOli)
+- [Ezequiel Almeida](https://github.com/EzeAlmeida)
+- [Fernando Cássio](https://github.com/FernandoCassioDev)
+- [Letícia Virgílio](https://github.com/Virgilioleticia)
+- [Liara Cristina](https://github.com/lidskey)
+- [Samira Grossi](https://github.com/sam-grs)
 
-Nest is [MIT licensed](LICENSE).
+
+## Feedback
+
+Se você tiver algum feedback, por favor nos deixe saber por meio de bellhooksprojeto@gmail.com
+
