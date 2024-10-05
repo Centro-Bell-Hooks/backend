@@ -35,8 +35,7 @@ Nosso Projeto é um site e-commerce de soluções baseadas na ODS5 - Igualdade d
 ## Funcionalidades
 
 - Login autênticado de usuário
-- Login autênticado do Admin
-- Tela Home 
+- Login autênticado do Admin 
 - Tela apresentando todos os serviços/cursos
 - Cadastro de novos serviços/cursos - Admin
 - Edição de novos serviços/cursos - Admin
