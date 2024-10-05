@@ -43,6 +43,15 @@ Nosso Projeto é um site e-commerce de soluções baseadas na ODS5 - Igualdade d
 - Perfil do candidato - melhoria futura
 - Tela 'Meus cursos' do candidato - melhoria futura
 
+  
+## Confira a documentação no Swagger 
+
+ - [Swagger Centro Bell Hooks](https://centro-bell-hooks.onrender.com/swagger)
+
+
+## Confira o Site
+
+ - [Centro Bell Hooks](https://centro-bellhooks.netlify.app/)
 
 ## Rodando localmente
 
@@ -82,7 +91,13 @@ Inicie o servidor
 - [Samira Grossi](https://github.com/sam-grs)
 
 
+## Documentação - MER/DER, ESCOPO
+
+[Documentação](https://github.com/Centro-Bell-Hooks/documentacao)
+
+### Repositório do frontend: 
+https://github.com/Centro-Bell-Hooks/frontend
+
 ## Feedback
 
 Se você tiver algum feedback, por favor nos deixe saber por meio de bellhooksprojeto@gmail.com
-
