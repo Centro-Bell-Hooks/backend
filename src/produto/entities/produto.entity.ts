@@ -37,11 +37,6 @@ export class Produto {
 
   @ApiProperty()
   @IsNotEmpty()
-  @Column({ nullable: true })
-  contador: number;
-
-  @ApiProperty()
-  @IsNotEmpty()
   @Column({ nullable: false })
   quantidade: number;
 
@@ -60,8 +55,8 @@ export class Produto {
   categoria: Categoria;
 
   @ManyToOne(() => Usuario, (usuario) => usuario.produto, {
-    onDelete: "CASCADE"
+    onDelete: 'CASCADE',
   })
-  @ApiProperty({ type: () => Usuario }) 
-    usuario: Usuario;
+  @ApiProperty({ type: () => Usuario })
+  usuario: Usuario;
 }

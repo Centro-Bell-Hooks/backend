@@ -19,8 +19,16 @@ export class Categoria {
   tipo: string;
 
   @ApiProperty()
-  @Column({ length: 255 })
+  @Transform(({ value }: TransformFnParams) => value?.trim())
+  @IsNotEmpty()
+  @Column({ length: 255, nullable: false })
   cargo: string;
+
+  @ApiProperty()
+  @Transform(({ value }: TransformFnParams) => value?.trim())
+  @IsNotEmpty()
+  @Column({ length: 255, nullable: false })
+  nome_instituicao: string;
 
   @ApiProperty()
   @OneToMany(() => Produto, (produto) => produto.categoria)
